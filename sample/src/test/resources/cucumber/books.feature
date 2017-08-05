@@ -1,5 +1,5 @@
 Feature: User makes a call on /books!
-  Scenario: Server reply version
-    Given I call GET on /version
+  Scenario: User makes call to /books
+    Given User calls GET on /books
     Then the response status is 200
-    And the response body must contain message with 1.0
+    And the number of books returned is 4
